@@ -8,11 +8,13 @@
  <body>
  	<header>
  	  <nav>
+ 	  	<a href="#">
+ 	  		<img src="img/logo.svg" alt="логотип">
+ 	  	</a>
  	  	<ul>
  	  	  <li><a href="#">Каталог</a></li>
  	  	  <li><a href="#">Доставка и оплата</a></li>
  	  	  <li><a href="#">Отзывы</a></li>
- 	  	  <li><a href="#"><img src="img/logo.svg" alt="логотип"></a></li>
  	  	  <li><a href="#">Спецпредложения</a></li>
  	  	  <li><a href="#">Контакты</a></li>
  	  	  <li><a href="#">Корзина</a></li>
@@ -51,13 +53,23 @@
  		</section>
  		<section>
  			<h2>Популярные букеты</h2>
- 			<h3>Букет "Нежность"</h3>
- 			<p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
- 			<p>30 х 40 см</p>
- 			<span>3600 руб.</span>
- 			<img src="img/garden-roses.jpg" alt="букет нежность" width="387" height="438">
- 			<button><img src="img/Arrow 2.svg"></button>
- 			<button><img src="img/Arrow 1.svg"></button>
+ 			<div>
+ 				<h3>Букет "Нежность"</h3>
+ 				<p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+ 				<p>30 х 40 см</p>
+ 				<p>3600 руб.</p>
+ 			</div>
+ 			<div>
+ 				<img src="img/garden-roses.jpg" alt="букет нежность" width="387" height="438">
+ 			</div>
+ 			<div>
+ 				<button type="button">
+ 					<img src="img/Arrow 2.svg">
+ 				</button>
+ 				<button type="button">
+ 					<img src="img/Arrow 1.svg">
+ 				</button>
+ 			</div>
  		</section>
  		<section>
  			<div>
@@ -112,39 +124,64 @@
  		<section>
  			<h2>Следите за нашими новостями</h2>
  			<p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первыми</p>
- 			<a href=""><img src="img/instagram_icon.svg"></a>
- 			<a href=""><img src="img/facebook_icon.svg"></a>
- 			<a href=""><img src="img/twitter_icon.svg"></a>
+ 			<ul>
+ 				<li>
+ 					<a href="">
+ 						<span class="visually-hidden">Instagramm</span>
+ 						<img src="img/instagram_icon.svg">
+ 					</a>
+ 				</li>
+ 				<li>
+ 					<a href="">
+ 						<span class="visually-hidden">Facebook</span>
+ 						<img src="img/facebook_icon.svg">
+ 					</a>
+ 				</li>
+ 				<li>
+ 					<a href="">
+ 						<span class="visually-hidden">Twitter</span>
+ 						<img src="img/twitter_icon.svg">
+ 					</a>
+ 				</li>
+ 			</ul>
  		</section>
  		<section>
  			<h2>Отзывы</h2>
- 			<ul>
- 				<li>
- 					<p>Все очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
- 					<span>Марина</span>
- 				</li>
- 				<li>
- 					<p>Внимательные флористы, вежливые.Магазин находится прям рядом с метро. Букет очень понравился, буду еще заказывать!</p>
- 					<span>Татьяна</span>
- 				</li>
- 				<li>
- 					<p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
- 					<span>Ольга</span>
- 				</li>
- 			</ul>
+ 			<div>
+ 				<blockquote>Все очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</blockquote>
+ 				<cite>Марина</cite>
+ 			</div>
+ 			<div>
+ 				<blockquote>Внимательные флористы, вежливые.Магазин находится прям рядом с метро. Букет очень понравился, буду еще заказывать!</blockquote>
+ 				<cite>Татьяна</cite>
+ 			</div>
+ 			<div>
+ 				<blockquote>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</blockquote>
+ 				<citen>Ольга</cite>
+ 			</div>	
  		</section>
  		<section>
  			<div><img src="img/map.jpg" alt="карта" width="1440" height="="644"></div>
  			<div>
  				<h2>Мы ждем вас</h2>
- 				<p>Приходите к нам:</p>
- 				<p>Санкт-Петербург,<br> ул. Большая Конюшенная, 19</p>
- 				<p>Режим работы:</p>
- 				<p>Пн-Вск, с 9-00 до 20-00</p>
- 				<p>Позвоните нам:</p>
- 				<p>+7(812)983-47-19</p>
- 				<p>Напишите нам:</p>
- 				<p>info@botanika.ru</p>
+ 				<ul>
+ 					<li>
+ 						<p>Приходите к нам:</p>
+ 						<p>Санкт-Петербург,<br> ул. Большая Конюшенная, 19</p>
+ 					</li>
+ 					<li>
+ 						<p>Режим работы:</p>
+ 						<p>Пн-Вск, с 9-00 до 20-00</p>
+ 					</li>
+ 					<li>
+ 						<p>Позвоните нам:</p>
+ 						<p>+7(812)983-47-19</p>
+ 					</li>
+ 					<li>
+ 						<p>Напишите нам:</p>
+ 						<p>info@botanika.ru</p>
+ 					</li>
+ 				</ul>
  			</div>
  		</section>
  	</main>
@@ -152,18 +189,45 @@
  		<div>
  			<img src="img/logo-footer.svg">
  		</div>
- 		<ul>
- 			<li><a href="#">Каталог</a></li>
- 			<li><a href="#">Доставка и оплата</a></li>
- 			<li><a href="#">Отзывы</a></li>
- 			<li><a href="#">Спецпредложения</a></li>
- 			<li><a href="#">Контакты</a></li>
- 		</ul>
+ 		<nav>
+ 			<ul>
+ 				<li>
+ 					<a href="#">Каталог</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Доставка и оплата</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Отзывы</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Спецпредложения</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Контакты</a>
+ 				</li>
+ 			</ul>
+ 		</nav>
  		<div>
  			<ul>
- 				<li><a href=""><img src="img/instagram_icon-footer.svg"></a></li>
- 				<li><a href=""><img src="img/facebook_icon-footer.svg"></a></li>
- 				<li><a href=""><img src="img/twitter_icon-footer.svg"></a></li>
+ 				<li>
+ 					<a href="">
+ 						<span class="visually-hidden">Instagramm</span>
+ 						<img src="img/instagram_icon-footer.svg">
+ 					</a>
+ 				</li>
+ 				<li>
+ 					<a href="">
+ 						<span class="visually-hidden">Facebook</span>
+ 						<img src="img/facebook_icon-footer.svg">
+ 					</a>
+ 				</li>
+ 				<li>
+ 					<a href="">
+ 						<span class="visually-hidden">Twitter</span>
+ 						<img src="img/twitter_icon-footer.svg">
+ 					</a>
+ 				</li>
  			</ul>
  		</div>
  	</footer>
