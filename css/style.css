@@ -1,5 +1,174 @@
-.menu-item {
-	font-family: 'Montserrat', sans-serif;
+
+.main-menu {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #ae7c78;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+	list-style: none;
+}
+
+.main-menu li a {
+	color: #ae7c78;
+	text-decoration: none;
+}
+
+.title {
+	font-family: 'Playfair Display', 'Georgia', serif;
+	font-size: 44px;
+	line-height: 58px;
+	font-weight: 400;
+	color: #ae7c78;
+}
+
+.italic {
+	font-style: italic;
+	color: #ae7c78;
+}
+
+.intro-item p,
+.news p {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #ae7c78;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 19.5px;
+
+}
+
+.button {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+	background-color: #D89999;
+	text-decoration: none;
+}
+
+.benefits-item,
+.popular p,
+.ideal-item p,
+.reviews-item blockquote {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #ae7c78;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+	font-style: normal;
+}
+
+.benefits-item h3,
+.ideal-item h3,
+.reviews-item cite {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #ae7c78;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19.5px;
+}
+
+.popular h2,
+.ideal h2,
+.news h2,
+.reviews h2,
+.cotnacts-block h2 {
+	font-family: 'Playfair Display', 'Georgia', serif;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 700;
+	color: #ae7c78;
+}
+
+.popular h3,
+p.price {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #ae7c78;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.catalog-item {
+	background-color: #D89999;
+}
+.catalog-item h2 {
+	font-family: 'Playfair Display', 'Georgia', serif;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+
+.catalog-item p {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+	text-align: center;
+}
+
+.catalog-item a {
+	text-decoration: none;
+}
+
+.promo-item {
+	background-color: #AE7C78;
+}
+
+.promo-item p:first-child {
+	font-family: 'Playfair Display', 'Georgia', serif;
+	font-size: 44px;
+	line-height: 58px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.promo-item p:last-child {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+	text-align: center;
+}
+
+.contacts-list,
+.footer-menu,
+.social-footer {
+	list-style: none;
+}
+
+.contacts-item p:first-child {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #AE7C78;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+}
+
+.contacts-item p:nth-child(2n) {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #ae7c78;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19.5px;
+}
+
+.page-footer {
+	background-color: #AE7C78;
+}
+
+.footer-menu a,
+.social-footer a {
+	text-decoration: none;
+}
+
+.footer-menu li a{
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 19.5px;
