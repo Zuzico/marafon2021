@@ -1,4 +1,19 @@
 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+.page-header {
+	border-top: 1px solid #AE7C78;
+	border-bottom: 1px solid #AE7C78;
+	margin-top: 20px;
+	margin-bottom: 82px;
+}
 .main-menu {
 	font-family: 'Montserrat', 'Arial', sans-serif;
 	color: #ae7c78;
@@ -6,11 +21,17 @@
 	font-weight: 400;
 	line-height: 19.5px;
 	list-style: none;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .main-menu li a {
 	color: #ae7c78;
 	text-decoration: none;
+	padding-top: 22px;
+	padding-bottom: 22px;
 }
 
 .title {
@@ -19,11 +40,28 @@
 	line-height: 58px;
 	font-weight: 400;
 	color: #ae7c78;
+	margin: 0;
+	padding: 0;
 }
 
 .italic {
 	font-style: italic;
 	color: #ae7c78;
+}
+
+.intro {
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.intro-item:first-child {
+	align-self: flex-start;
+	margin-right: 23px;
+}
+
+.intro-item:nth-child(2) {
+	align-self: flex-end;
+	margin-right: 20px;
 }
 
 .intro-item p,
@@ -36,6 +74,14 @@
 
 }
 
+.intro-item p,
+.price {
+	margin: 0;
+	padding: 0;
+	margin-top: 24px;
+	margin-bottom: 64px;
+}
+
 .button {
 	font-family: 'Montserrat', 'Arial', sans-serif;
 	color: #fff;
@@ -44,6 +90,8 @@
 	line-height: 19.5px;
 	background-color: #D89999;
 	text-decoration: none;
+	border-radius: 40px;
+	padding: 30px 70px;
 }
 
 .benefits-item,
@@ -68,16 +116,34 @@
 	line-height: 19.5px;
 }
 
+.benefits-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.benefits-item {
+	width: 285px;
+}
+
 .popular h2,
 .ideal h2,
 .news h2,
 .reviews h2,
-.cotnacts-block h2 {
+.contacts-block h2 {
 	font-family: 'Playfair Display', 'Georgia', serif;
 	font-size: 36px;
 	line-height: 48px;
 	font-weight: 700;
 	color: #ae7c78;
+}
+
+.popular {
+	width: 794px;
+	height: 546px;
+	margin: 0 auto;
+	margin-bottom: 80px;
 }
 
 .popular h3,
@@ -88,10 +154,26 @@ p.price {
 	font-weight: 500;
 	line-height: 30px;
 }
+.slider-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.slider-control {
+	text-align: center;
+}
+
+.catalog {
+	display: grid;
+	grid-template-columns: 387px 387px 387px;
+	column-gap: 19px;
+	margin-bottom: 80px;
+}
 
 .catalog-item {
 	background-color: #D89999;
 }
+
 .catalog-item h2 {
 	font-family: 'Playfair Display', 'Georgia', serif;
 	font-size: 36px;
@@ -110,8 +192,14 @@ p.price {
 	text-align: center;
 }
 
-.catalog-item a {
+.catalog-item {
 	text-decoration: none;
+}
+
+.promo {
+	display: grid;
+	grid-template-columns: 1fr 590px;
+	margin-bottom: 80px;
 }
 
 .promo-item {
@@ -124,20 +212,62 @@ p.price {
 	line-height: 58px;
 	font-weight: 400;
 	color: #fff;
+	margin: 40px 20px 24px 102px;
+	padding: 0;
 }
 
 .promo-item p:last-child {
 	font-family: 'Montserrat', 'Arial', sans-serif;
 	color: #fff;
-	font-size: 16px;
+	font-size: 24px;
 	font-weight: 400;
-	line-height: 19.5px;
+	line-height: 29px;
 	text-align: center;
+	margin: 0 121px 64px 102px;
+	padding: 0;
+	text-align: left;
+}
+
+.ideal-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.ideal-item {
+	width: 285px;
+	text-align: center;
+}
+
+.news {
+	margin-bottom: 80px;
+}
+
+.reviews {
+	border: 1px solid #AE7C78;
+	margin-bottom: 80px;
+}
+
+.reviews-item {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	column-gap: 106px;
+	text-align: center;;
+}
+
+.reviews-item blockquote {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 16px;
 }
 
 .contacts-list,
 .footer-menu,
-.social-footer {
+.social-footer,
+.benefits-list,
+.ideal-list,
+.reviews-item {
 	list-style: none;
 }
 
@@ -157,8 +287,63 @@ p.price {
 	line-height: 19.5px;
 }
 
+.contacts {
+	position: relative;
+	margin: 0;
+}
+
+.contacts-block h2 {
+	padding-left: 35px;
+}
+.contacts-block {
+	width: 386px;
+	height: 520px;
+	background-color: #F7FAFC;
+	border-radius: 12px;
+	position: absolute;
+	left: 222px;
+	top: 52px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.map {
+	background-color: #D89999;
+}
+
 .page-footer {
 	background-color: #AE7C78;
+}
+
+.container-footer {
+
+	width: 1200px;
+	height: 97px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+	column-gap: 105px;
+	align-items: center;
+	
+}
+
+.footer-menu {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
+}
+
+.social-footer {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
 }
 
 .footer-menu a,
