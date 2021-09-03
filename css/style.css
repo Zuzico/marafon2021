@@ -1,4 +1,14 @@
 
+/* * {outline: 1px solid;} */
+
+body {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: #ae7c78;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+}
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -15,14 +25,15 @@
 	margin-bottom: 82px;
 }
 
-.main-menu {
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	color: #ae7c78;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 19.5px;
+.list-style {
 	list-style: none;
-	
+}
+
+.decoration {
+	text-decoration: none;
+}
+
+.main-menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -30,7 +41,6 @@
 
 .main-menu li a {
 	color: #ae7c78;
-	text-decoration: none;
 	padding-top: 22px;
 	padding-bottom: 22px;
 }
@@ -67,12 +77,8 @@
 
 .intro-item p,
 .news p {
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	color: #ae7c78;
 	font-size: 24px;
-	font-weight: 400;
-	line-height: 19.5px;
-
+	line-height: 30px;
 }
 
 .intro-item p,
@@ -84,37 +90,17 @@
 }
 
 .button {
-	font-family: 'Montserrat', 'Arial', sans-serif;
 	color: #fff;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 19.5px;
 	background-color: #D89999;
 	text-decoration: none;
 	border-radius: 40px;
 	padding: 30px 70px;
 }
 
-.benefits-item,
-.popular p,
-.ideal-item p,
-.reviews-item blockquote {
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	color: #ae7c78;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 19.5px;
-	font-style: normal;
-}
-
 .benefits-item h3,
 .ideal-item h3,
 .reviews-item cite {
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	color: #ae7c78;
-	font-size: 16px;
 	font-weight: 500;
-	line-height: 19.5px;
 }
 
 .benefits-list {
@@ -149,12 +135,11 @@
 
 .popular h3,
 p.price {
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	color: #ae7c78;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 30px;
 }
+
 .slider-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -185,16 +170,8 @@ p.price {
 }
 
 .catalog-item p {
-	font-family: 'Montserrat', 'Arial', sans-serif;
 	color: #fff;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 19.5px;
 	text-align: center;
-}
-
-.catalog-item {
-	text-decoration: none;
 }
 
 .promo {
@@ -218,15 +195,17 @@ p.price {
 }
 
 .promo-item p:last-child {
-	font-family: 'Montserrat', 'Arial', sans-serif;
 	color: #fff;
 	font-size: 24px;
-	font-weight: 400;
 	line-height: 29px;
 	text-align: center;
 	margin: 0 121px 64px 102px;
 	padding: 0;
 	text-align: left;
+}
+
+.ideal {
+	margin-bottom: 80px;
 }
 
 .ideal-list {
@@ -243,6 +222,30 @@ p.price {
 
 .news {
 	margin-bottom: 80px;
+
+	display: grid;
+	grid-template-columns: 487px 285px 387px;
+	grid-gap: 20px;
+}
+
+.news-item:first-child {
+	column-gap: span 2;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.news-item:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.social-news {
+	width: 97px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
 }
 
 .reviews {
@@ -263,29 +266,8 @@ p.price {
 	margin-bottom: 16px;
 }
 
-.contacts-list,
-.footer-menu,
-.social-footer,
-.benefits-list,
-.ideal-list,
-.reviews-item {
-	list-style: none;
-}
-
-.contacts-item p:first-child {
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	color: #AE7C78;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 19.5px;
-}
-
 .contacts-item p:nth-child(2n) {
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	color: #ae7c78;
-	font-size: 16px;
 	font-weight: 500;
-	line-height: 19.5px;
 }
 
 .contacts {
@@ -296,6 +278,7 @@ p.price {
 .contacts-block h2 {
 	padding-left: 35px;
 }
+
 .contacts-block {
 	width: 386px;
 	height: 520px;
@@ -318,7 +301,6 @@ p.price {
 }
 
 .container-footer {
-
 	width: 1200px;
 	height: 97px;
 	margin: 0 auto;
@@ -326,7 +308,6 @@ p.price {
 	grid-template-columns: 100px 1fr 100px;
 	column-gap: 105px;
 	align-items: center;
-	
 }
 
 .footer-menu {
@@ -335,7 +316,6 @@ p.price {
 
 	margin: 0;
 	padding: 0;
-
 }
 
 .social-footer {
@@ -344,18 +324,8 @@ p.price {
 
 	margin: 0;
 	padding: 0;
-
-}
-
-.footer-menu a,
-.social-footer a {
-	text-decoration: none;
 }
 
 .footer-menu li a{
-	font-family: 'Montserrat', 'Arial', sans-serif;
 	color: #fff;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 19.5px;
 }
