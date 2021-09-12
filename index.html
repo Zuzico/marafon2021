@@ -5,7 +5,7 @@
    <title>Марафон-2021</title>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.min.css">
  </head>
  <body>
  	<header class="page-header">
@@ -173,7 +173,10 @@
  			</ul>	
  		</section>
  		<section class="contacts">
- 			<div class="map"><img src="img/map.jpg" alt="карта" width="1440" height="644"></div>
+ 			<div class="map">
+ 				<img src="img/map.jpg" alt="карта" width="1440" height="644">
+ 			</div>
+ 			<div class="container">
  			<div class="contacts-block">
  				<h2>Мы ждем вас</h2>
  				<ul class="contacts-list list-style">
@@ -187,20 +190,23 @@
  					</li>
  					<li class="contacts-item">
  						<p>Позвоните нам:</p>
- 						<p>+7(812)983-47-19</p>
+ 						<p><a href="tel:78129834719" class="tel">+7(812)983-47-19</a></p>
  					</li>
  					<li class="contacts-item">
  						<p>Напишите нам:</p>
- 						<p>info@botanika.ru</p>
+ 						<p><a href="mailto:info@botanika.ru" class="email">info@botanika.ru</a></p>
  					</li>
  				</ul>
+ 			</div>
  			</div>
  		</section>
  	</main>
  	<footer class="page-footer">
  		<div class="container-footer">
  			<div class="logo-footer">
- 				<img src="img/logo-footer.svg" alt="логотип в футере">
+ 				<a href="#">
+ 					<img src="img/logo-footer.svg" alt="логотип в футере">
+ 				</a>
  			</div>
  			<nav class="footer-nav">
  				<ul class="footer-menu list-style">
@@ -223,19 +229,19 @@
  			</nav>
  			<ul class="social-footer list-style">
  				<li>
- 					<a href="" class="decoration">
+ 					<a href="#" class="decoration">
  						
  						<img src="img/instagram_icon-footer.svg" alt="инстаграмм">
  					</a>
  				</li>
  				<li>
- 					<a href="" class="decoration">
+ 					<a href="#" class="decoration">
  						
  						<img src="img/facebook_icon-footer.svg" alt="фейсбук">
  					</a>
  				</li>
  				<li>
- 					<a href="" class="decoration">
+ 					<a href="#" class="decoration">
  						
  						<img src="img/twitter_icon-footer.svg" alt="твиттер">
  					</a>
