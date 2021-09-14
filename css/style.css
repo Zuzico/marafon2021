@@ -439,6 +439,7 @@ p.price {
 .reviews {
 	border: 1px solid #AE7C78;
 	padding: 40px 44px 64px 44px;
+	box-sizing: border-box;
 }
 
 .reviews-item {
